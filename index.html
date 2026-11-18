@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お天気アプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="weather-container">
+        <h1>☀️ お天気アプリ</h1>
+
+        <p>都市名を入力してください</p>
+
+        <div class="search-box">
+            <input type="text" id="city" placeholder="例：Fukuoka">
+            <button id="search">検索</button>
+        </div>
+
+        <div id="weather">
+            <h2 id="cityName">都市名</h2>
+            <div class="weather-icon" id="icon">🌤️</div>
+            <h1 id="temperature">--℃</h1>
+            <p id="description">天気情報</p>
+
+            <div class="weather-info">
+                <div>
+                    <p>💧 湿度</p>
+                    <h3 id="humidity">--%</h3>
+                </div>
+
+                <div>
+                    <p>💨 風速</p>
+                    <h3 id="wind">-- m/s</h3>
+                </div>
+            </div>
+        </div>
+
+        <p id="message"></p>
+    </div>
+
+    <!-- jQueryを読み込む -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
